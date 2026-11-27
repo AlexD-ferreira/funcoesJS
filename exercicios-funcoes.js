@@ -130,9 +130,27 @@ console.log(`A media das notas e ${notaTrimestral}`);
 
 // Escreva o código do Bloco 3 abaixo:
 
+const aplicarDesconto = function(valorOriginal,porcentagemDesconto){
+   return valorFinal = valorOriginal - porcentagemDesconto;
+}
+const resultadofinal = aplicarDesconto(200,15)
+console.log(`O valor a final a pagar e : ${resultadofinal}`)
 
+//
 
+const validarTamanhoSenha = function(senha) {
+   if  (senha.length > 8) {
+      return true
+   }
+   else {
+      return false
+   }
+}
 
+let validar = validarTamanhoSenha("12345")
+console.log(`Possui 8 ou mais caracteres?: ${validar}`)
+validar = validarTamanhoSenha("senhaSegura2026")
+console.log(`Possui 8 ou mais caracteres?: ${validar}`)
 
 /* ==========================================================================
    BLOCO 4: ARROW FUNCTIONS & RETORNO IMPLÍCITO
@@ -155,4 +173,17 @@ console.log(`A media das notas e ${notaTrimestral}`);
 
 // Escreva o código do Bloco 4 abaixo:
 
+const calcularDobro = (numero) => numero * 2;
 
+console.log(`O dobro de ${15} é ${calcularDobro(15)}`);
+console.log(`O dobro de ${30} é ${calcularDobro(30)}`);
+
+//
+
+const minutosParaSegundos = (minuto) => minuto * 60;
+console.log(`${5} minutos convertido em segundos é ${minutosParaSegundos(5)}`)
+
+//
+
+let saudacaoExpress = (nome) => `Olá, ${nome}! Seja bem-vindo(a).`
+console.log(saudacaoExpress("Sebastião"));
