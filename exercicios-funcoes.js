@@ -31,7 +31,7 @@ function calcularAreaTerreno(largura, comprimento){
    const calculo = largura * comprimento;
    return calculo;
 }
-const areaTotal = calcularAreaTerreno(10, 25);
+let areaTotal = calcularAreaTerreno(10, 25);
 console.log(`O Terreno tem ${areaTotal}m`);
 
 //
@@ -78,8 +78,38 @@ console.log(mensagem);
 
 // Escreva o código do Bloco 2 abaixo:
 
+function calcularTotalFrete(preco,frete=15.00){
+   let valorTotal = preco + frete;
+   return valorTotal;
+}
+   let total = calcularTotalFrete(250.00);
+console.log(`O valor total e :${total} `);
 
+total = calcularTotalFrete(250.00,25.00)
+console.log(`O novo valor total e :${total} `)
 
+//
+
+function formatarMoeda(valor,simbolo="R$"){
+   return `${valor} ${simbolo}`;
+}
+let converterMoeda = formatarMoeda(100);
+console.log(`Covenvertido em Reais ${converterMoeda}`);
+
+converterMoeda = formatarMoeda(100,"USD");
+console.log(`Convertido em Dolar ${converterMoeda}`);
+
+//
+
+function cacularMediaTrimestre(nota1,nota2,nota3=0){
+   let media = (nota1 + nota2 + nota3)/3;
+   return media;
+}
+let notaTrimestral = cacularMediaTrimestre(20,10);
+console.log(`A media das notas e ${notaTrimestral}`);
+
+notaTrimestral = cacularMediaTrimestre(20,10,20);
+console.log(`A media das notas e ${notaTrimestral}`);
 
 
 /* ==========================================================================
